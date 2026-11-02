@@ -1,0 +1,23 @@
+{
+  "wagon_id": "11-286",
+  "type": "covered",
+  "inner": {
+    "length": 15724,
+    "width": 2764,
+    "height": 2860
+  },
+  "door": {
+    "width": 3802,
+    "height": 2334,
+    "position": "center_side"
+  },
+  "floor_height_urg": 1286,
+  "payload_t": 67,
+  "tare_t": 27,
+  "tare_ct_mm": null,
+  "bogie_wheelbase_mm": 12240,
+  "forbidden_zones": [],
+  "tie_down_devices": [],
+  "source": "vagon.by/model/11-286 (ТУ24.05.01.078-92, Алтайвагон): кузов 15724×2764×2860, дверь 3802×2334, пол 1286, база 12240, GP 67, тара 26–27 (макс)",
+  "source_note": "tare_ct_mm — ТРЕБУЕТСЯ ИЗ ПЕРВОИСТОЧНИКА (табл. 18 ЦМ-943 — открытый ПС, v2, ADR-018); forbidden_zones/tie_down_devices — по паспорту ПС, задача 1.4; база вагона из открытых источников, подтвердить альбомом/паспортом (задача 1.4)"
+}

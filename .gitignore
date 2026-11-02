@@ -1,0 +1,7 @@
+# Корневой .gitignore шаблоном AGENTS.md (без /) игнорирует AGENTS.md на всех
+# уровнях — здесь снимаем игнор, чтобы server/AGENTS.md попадал в коммиты.
+!AGENTS.md
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/

@@ -1,0 +1,23 @@
+{
+  "wagon_id": "11-260",
+  "type": "covered",
+  "inner": {
+    "length": 16080,
+    "width": 2770,
+    "height": 3050
+  },
+  "door": {
+    "width": 3973,
+    "height": 2717,
+    "position": "center_side"
+  },
+  "floor_height_urg": 1286,
+  "payload_t": 68,
+  "tare_t": 26,
+  "tare_ct_mm": null,
+  "bogie_wheelbase_mm": 12240,
+  "forbidden_zones": [],
+  "tie_down_devices": [],
+  "source": "vagon.by/model/11-260 (ТУ 24-5-498-86, Алтайвагон): кузов 16080×2770×3050, дверь 3973×2717, пол 1286, база 12240, GP 68, тара 25–26 (макс), объём 140 м3",
+  "source_note": "tare_ct_mm — ТРЕБУЕТСЯ ИЗ ПЕРВОИСТОЧНИКА (табл. 18 ЦМ-943 — открытый ПС, v2, ADR-018); forbidden_zones/tie_down_devices — по паспорту ПС, задача 1.4; база вагона из открытых источников, подтвердить альбомом/паспортом (задача 1.4)"
+}

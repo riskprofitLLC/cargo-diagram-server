@@ -1,0 +1,17 @@
+# Зависимости аудита-версии — только ссылки (сами библиотеки не копируем, см. README.md).
+# Наш код: app/ engine/ norms/ schemas/ db/ export/ data/ + cli.py, worker.py, alembic/.
+fastapi==0.115.*          # https://pypi.org/project/fastapi/  (GitHub: encode/starlette → fastapi)
+uvicorn[standard]==0.32.* # https://pypi.org/project/uvicorn/
+pydantic==2.9.*           # https://pypi.org/project/pydantic/
+sqlalchemy==2.0.*         # https://pypi.org/project/SQLAlchemy/
+alembic==1.13.*           # https://pypi.org/project/alembic/
+psycopg2-binary==2.9.*    # https://pypi.org/project/psycopg2-binary/ (LGPL, динамическая линковка)
+rq==1.16.*                # https://pypi.org/project/rq/
+redis==5.0.*              # https://pypi.org/project/redis/ (клиент для Valkey)
+ortools==9.15.*           # https://pypi.org/project/ortools/ (L2, Apache-2.0; GitHub: google/or-tools)
+ezdxf==1.3.*              # https://pypi.org/project/ezdxf/ (GitHub: mozman/ezdxf)
+reportlab==4.2.*          # https://pypi.org/project/reportlab/ (PDF, ADR-011)
+# Ядро L1: packingsolver 0.1.1218 (MIT) — НЕ копируем (vendor исключён из аудита-версии):
+#   PyPI: https://pypi.org/project/packingsolver/
+#   upstream: https://github.com/PackingSolver/PackingSolver (релиз 0.1.1218, лицензия MIT)
+packingsolver==0.1.1218

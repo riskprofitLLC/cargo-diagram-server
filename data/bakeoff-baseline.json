@@ -1,0 +1,47 @@
+{
+  "big-mix-150": {
+    "fill": 72.23,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "big-mix-300": {
+    "fill": 80.48,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "big-mix-50": {
+    "fill": 39.35,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "mid-mix-150": {
+    "fill": 43.54,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "mid-mix-300": {
+    "fill": 82.86,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "mid-mix-50": {
+    "fill": 13.93,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "small-mix-150": {
+    "fill": 19.62,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "small-mix-300": {
+    "fill": 39.24,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  },
+  "small-mix-50": {
+    "fill": 6.28,
+    "valid_share": 1.0,
+    "mode": "deterministic"
+  }
+}

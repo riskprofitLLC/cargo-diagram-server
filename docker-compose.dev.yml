@@ -1,0 +1,37 @@
+# Dev-окружение (задача 0.16): app-заглушка + postgres + valkey.
+# Prod-вариант с nginx/TLS — этап 6 (6.1).
+services:
+  app:
+    build: .
+    ports:
+      - "${DEV_APP_PORT:-8000}:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/cargo
+      - VALKEY_URL=redis://valkey:6379/0
+      - CORS_ORIGINS=${CORS_ORIGINS:-}
+      - API_KEYS=${API_KEYS:-}
+    depends_on:
+      - postgres
+      - valkey
+  # воркер очереди calc (как в проде): задания с time_limit > 5 с обрабатываются здесь
+  worker:
+    build: .
+    command: ["rq", "worker", "--url", "redis://valkey:6379/0", "calc"]
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/cargo
+      - VALKEY_URL=redis://valkey:6379/0
+    depends_on:
+      - postgres
+      - valkey
+  postgres:
+    image: postgres:16
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=cargo
+    ports:
+      # порты хоста настраиваются (по умолчанию 5432/6379; занятые — переопределить)
+      - "${DEV_POSTGRES_PORT:-5432}:5432"
+  valkey:
+    image: valkey/valkey:8
+    ports:
+      - "${DEV_VALKEY_PORT:-6379}:6379"

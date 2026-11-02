@@ -1,0 +1,23 @@
+{
+  "wagon_id": "11-264",
+  "type": "covered",
+  "inner": {
+    "length": 13082,
+    "width": 2764,
+    "height": 2791
+  },
+  "door": {
+    "width": 3794,
+    "height": 2343,
+    "position": "center_side"
+  },
+  "floor_height_urg": 1285,
+  "payload_t": 68,
+  "tare_t": 25,
+  "tare_ct_mm": null,
+  "bogie_wheelbase_mm": 10000,
+  "forbidden_zones": [],
+  "tie_down_devices": [],
+  "source": "vagon.by/model/11-264 (ТУ 24.05.802-86, Алтайвагон): кузов 13082×2764×2791, дверь 3794×2343, пол 1285, база 10000, GP 68, тара 24–25 (берём макс)",
+  "source_note": "tare_ct_mm — ТРЕБУЕТСЯ ИЗ ПЕРВОИСТОЧНИКА (табл. 18 ЦМ-943 — открытый ПС, v2, ADR-018); forbidden_zones/tie_down_devices — по паспорту ПС, задача 1.4; база вагона из открытых источников, подтвердить альбомом/паспортом (задача 1.4)"
+}
